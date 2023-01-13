@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My website</title>
+  </head>
+  <body>
+    <h1>Welcome to my website</h1>
+    <p>This is a basic HTML file.</p>
+  <table>
+    <tr>
+        <th>Title</th>
+        <th>Price</th>
+        <th>Condition</th>
+        <th>Shipping</th>
+        <th>URL</th>
+    </tr>
+    {% for row in items %}
+    <tr>
+        <td>{{ row.title }}</td>
+        <td>{{ row.price }}</td>
+        <td>{{ row.condition }}</td>
+        <td>{{ row.shipping }}</td>
+        <td>{{ row.url }}</td>
+    </tr>
+    {% endfor %}
+</table>
+  </body>
+</html>
+
