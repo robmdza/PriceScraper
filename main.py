@@ -9,6 +9,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
 app = Flask(__name__)
+app.debug = True
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite://///Users/rober/PycharmProjects/PriceScraper/database.db'
 db.init_app(app)
 
